@@ -1,4 +1,6 @@
-﻿#include <iostream>
+// http://cppstudio.com/cat/285/286/ <- Задание от сюда
+
+#include <iostream>
 #include <vector>
 #include <algorithm>
 
@@ -21,4 +23,5 @@ int main() {
 	cout << "Результат: x = " << x << endl;
 
 	return 0;
+
 }
