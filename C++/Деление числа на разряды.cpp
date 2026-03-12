@@ -1,5 +1,4 @@
-﻿// ConsoleApplication1.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
-//
+// http://cppstudio.com/cat/285/286/ <- Задание от сюда
 
 #include <iostream>
 #include <string>
@@ -25,4 +24,5 @@ int main()
 	cout << "Пятая цифра равна: " << a % 10 << endl;
 
 	return 0;
+
 }
