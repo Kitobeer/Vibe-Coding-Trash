@@ -1,0 +1,195 @@
+
+Ludvig@LUDVIG MINGW64 ~
+$ pwd
+/c/Users/Ludvig
+
+Ludvig@LUDVIG MINGW64 ~
+$ dir /d/Hobby/
+3D     FictionBook\ Editor  Без\ имени-1.png  Фотошоп
+Adobe  Programming          Рисовашки
+
+Ludvig@LUDVIG MINGW64 ~
+$ pwd
+/c/Users/Ludvig
+
+Ludvig@LUDVIG MINGW64 ~
+$ cd /d/Hobby/Programming
+
+Ludvig@LUDVIG MINGW64 /d/Hobby/Programming
+$ pwd
+/d/Hobby/Programming
+
+Ludvig@LUDVIG MINGW64 /d/Hobby/Programming
+$ mkdir lab_project
+
+Ludvig@LUDVIG MINGW64 /d/Hobby/Programming
+$ cd lab_project
+
+Ludvig@LUDVIG MINGW64 /d/Hobby/Programming/lab_project
+$ echo. > README.md
+bash: echo.: command not found
+
+Ludvig@LUDVIG MINGW64 /d/Hobby/Programming/lab_project
+$ touch README.md
+
+Ludvig@LUDVIG MINGW64 /d/Hobby/Programming/lab_project
+$ cat README.md
+
+Ludvig@LUDVIG MINGW64 /d/Hobby/Programming/lab_project
+$ help
+GNU bash, version 5.2.37(1)-release (x86_64-pc-msys)
+These shell commands are defined internally.  Type `help' to see this list.
+Type `help name' to find out more about the function `name'.
+Use `info bash' to find out more about the shell in general.
+Use `man -k' or `info' to find out more about commands not in this list.
+
+A star (*) next to a name means that the command is disabled.
+
+ job_spec [&]                            history [-c] [-d offset] [n] or hist>
+ (( expression ))                        if COMMANDS; then COMMANDS; [ elif C>
+ . filename [arguments]                  jobs [-lnprs] [jobspec ...] or jobs >
+ :                                       kill [-s sigspec | -n signum | -sigs>
+ [ arg... ]                              let arg [arg ...]
+ [[ expression ]]                        local [option] name[=value] ...
+ alias [-p] [name[=value] ... ]          logout [n]
+ bg [job_spec ...]                       mapfile [-d delim] [-n count] [-O or>
+ bind [-lpsvPSVX] [-m keymap] [-f file>  popd [-n] [+N | -N]
+ break [n]                               printf [-v var] format [arguments]
+ builtin [shell-builtin [arg ...]]       pushd [-n] [+N | -N | dir]
+ caller [expr]                           pwd [-LPW]
+ case WORD in [PATTERN [| PATTERN]...)>  read [-ers] [-a array] [-d delim] [->
+ cd [-L|[-P [-e]] [-@]] [dir]            readarray [-d delim] [-n count] [-O >
+ command [-pVv] command [arg ...]        readonly [-aAf] [name[=value] ...] o>
+ compgen [-abcdefgjksuv] [-o option] [>  return [n]
+ complete [-abcdefgjksuv] [-pr] [-DEI]>  select NAME [in WORDS ... ;] do COMM>
+ compopt [-o|+o option] [-DEI] [name .>  set [-abefhkmnptuvxBCEHPT] [-o optio>
+ continue [n]                            shift [n]
+ coproc [NAME] command [redirections]    shopt [-pqsu] [-o] [optname ...]
+ declare [-aAfFgiIlnrtux] [name[=value>  source filename [arguments]
+ dirs [-clpv] [+N] [-N]                  suspend [-f]
+ disown [-h] [-ar] [jobspec ... | pid >  test [expr]
+ echo [-neE] [arg ...]                   time [-p] pipeline
+ enable [-a] [-dnps] [-f filename] [na>  times
+ eval [arg ...]                          trap [-lp] [[arg] signal_spec ...]
+ exec [-cl] [-a name] [command [argume>  true
+ exit [n]                                type [-afptP] name [name ...]
+ export [-fn] [name[=value] ...] or ex>  typeset [-aAfFgiIlnrtux] name[=value>
+ false                                   ulimit [-SHabcdefiklmnpqrstuvxPRT] [>
+ fc [-e ename] [-lnr] [first] [last] o>  umask [-p] [-S] [mode]
+ fg [job_spec]                           unalias [-a] name [name ...]
+ for NAME [in WORDS ... ] ; do COMMAND>  unset [-f] [-v] [-n] [name ...]
+ for (( exp1; exp2; exp3 )); do COMMAN>  until COMMANDS; do COMMANDS-2; done
+ function name { COMMANDS ; } or name >  variables - Names and meanings of so>
+ getopts optstring name [arg ...]        wait [-fn] [-p var] [id ...]
+ hash [-lr] [-p pathname] [-dt] [name >  while COMMANDS; do COMMANDS-2; done
+ help [-dms] [pattern ...]               { COMMANDS ; }
+
+Ludvig@LUDVIG MINGW64 /d/Hobby/Programming/lab_project
+$ git init
+Initialized empty Git repository in D:/Hobby/Programming/lab_project/.git/
+
+Ludvig@LUDVIG MINGW64 /d/Hobby/Programming/lab_project (master)
+$ git add README.md
+
+Ludvig@LUDVIG MINGW64 /d/Hobby/Programming/lab_project (master)
+$ git commit -m "Добавлен README.md с описанием проекта?"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Ludvig@LUDVIG.(none)')
+
+Ludvig@LUDVIG MINGW64 /d/Hobby/Programming/lab_project (master)
+$ git config --global user.email "kitobeerag@gmail.com"
+
+Ludvig@LUDVIG MINGW64 /d/Hobby/Programming/lab_project (master)
+$ git commit -m "Добавлен README.md с описание проекта?"
+[master (root-commit) 4e41be4] Добавлен README.md с описание проекта?
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+
+Ludvig@LUDVIG MINGW64 /d/Hobby/Programming/lab_project (master)
+$ mkdir docs
+
+Ludvig@LUDVIG MINGW64 /d/Hobby/Programming/lab_project (master)
+$ cd docs
+
+Ludvig@LUDVIG MINGW64 /d/Hobby/Programming/lab_project/docs (master)
+$ touch instructions.txt
+
+Ludvig@LUDVIG MINGW64 /d/Hobby/Programming/lab_project/docs (master)
+$ echo "Инструкция по работе с проектом" > instructions.txt
+
+Ludvig@LUDVIG MINGW64 /d/Hobby/Programming/lab_project/docs (master)
+$ cd ..
+
+Ludvig@LUDVIG MINGW64 /d/Hobby/Programming/lab_project (master)
+$ cd
+
+Ludvig@LUDVIG MINGW64 ~
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Ludvig@LUDVIG MINGW64 ~
+$ cd lab_project
+bash: cd: lab_project: No such file or directory
+
+Ludvig@LUDVIG MINGW64 ~
+$ cd /d/Hobby/Programming/lab_project
+
+Ludvig@LUDVIG MINGW64 /d/Hobby/Programming/lab_project (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        docs/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Ludvig@LUDVIG MINGW64 /d/Hobby/Programming/lab_project (master)
+$ git init
+Reinitialized existing Git repository in D:/Hobby/Programming/lab_project/.git/
+
+Ludvig@LUDVIG MINGW64 /d/Hobby/Programming/lab_project (master)
+$ cd docs
+
+Ludvig@LUDVIG MINGW64 /d/Hobby/Programming/lab_project/docs (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ./
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Ludvig@LUDVIG MINGW64 /d/Hobby/Programming/lab_project/docs (master)
+$ git add instructions.txt
+warning: in the working copy of 'docs/instructions.txt', LF will be replaced by CRLF the next time Git touches it
+
+Ludvig@LUDVIG MINGW64 /d/Hobby/Programming/lab_project/docs (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   instructions.txt
+
+
+Ludvig@LUDVIG MINGW64 /d/Hobby/Programming/lab_project/docs (master)
+$ git add lab_project
+fatal: pathspec 'lab_project' did not match any files
+
+Ludvig@LUDVIG MINGW64 /d/Hobby/Programming/lab_project/docs (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   instructions.txt
+
